@@ -1,0 +1,107 @@
+@import 'reset.css';
+* {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(134, 127, 255, 1) 0%,
+    rgba(154, 154, 250, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 40px 15px 50px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  line-height: 52px;
+  text-align: center;
+}
+input {
+  flex-grow: 1;
+  font-weight: 300;
+  line-height: 1;
+  font-size: 20px;
+  padding: 15px;
+}
+
+form {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  border-radius: 6px;
+  height: 54px;
+}
+
+button {
+  width: 145px;
+  height: 54px;
+  background-color: rgb(6, 84, 140);
+  border-radius: 6px;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  transition: backgraund-color 0.2s ease-in;
+}
+button:hover {
+  background-color: rgb(37, 96, 139);
+}
+/* ---------CARD------- */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 1px 0px 10px 14px rgba(34, 60, 80, 0.2);
+  width: 360px;
+}
+.card-city {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+.card-city span {
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 3px 5px;
+  background-color: rgb(6, 84, 140);
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.card-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-value {
+  font-weight: 500;
+  font-size: 92px;
+  line-height: 1;
+}
+.card-value sup {
+  font-size: 50%;
+}
+
+.card-description {
+  font-size: 20px;
+  line-height: 1.2;
+}
